@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+</head>
+   <style>
+       .container{
+           height:400px;
+           width:800px;
+           margin-left:200px;
+           margin-top:60px;
+           display:grid;
+           grid-template-columns: repeat(3,300px);
+           grid-template-rows: repeat(4,100px);
+           grid-column-gap:1rem;
+           grid-row-gap:1rem;
+
+       }
+       #h1{
+           text-align:center;
+           color:grey;
+       }
+       #h2{
+           text-align:center;
+           color:black;
+           margin-top:-20px;
+       }
+       #p1{
+           text-align:center;
+           color:grey;
+           margin-bottom:-10px;
+       }
+       #p2{
+           text-align:center;
+           color:grey;
+           
+
+       }
+       .box:nth-child(2)
+       {
+            grid-row-start:2;
+            grid-row-end:4;
+       }
+       .box:nth-child(3)
+       {
+            grid-row-start:3;
+            grid-row-end:5;
+       }
+       .box:nth-child(7)
+       {
+            grid-row-start:2;
+            grid-row-end:4;
+       }
+       .box:nth-child(4)
+       {
+            grid-row-start:1;
+            grid-row-end:3;
+       }
+       #box9{
+           border-top:4px solid red;
+           padding-left:20px;
+           border-bottom:2px solid black;
+           border-left:2px solid black;
+           border-right:2px solid black;
+           background-color:white;
+       }
+       #box7{
+           border-top:4px solid rgb(18, 179, 219);
+           padding-left:20px;
+           border-bottom:2px solid black;
+           border-left:2px solid black;
+           border-right:2px solid black;
+           background-color:white;
+       }
+       #box8{
+           border-top:4px solid yellow;
+           padding-left:20px;
+           border-bottom:2px solid black;
+           border-left:2px solid black;
+           border-right:2px solid black;
+           background-color:white;
+       }
+       #box12
+       {
+           border-top:4px solid rgb(18, 179, 219);
+           padding-left:20px;
+           border-bottom:2px solid black;
+           border-left:2px solid black;
+           border-right:2px solid black;
+           color:grey;
+           background-color:white;
+       }
+       header::before{
+           background-image:url(https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80);
+           content: "";
+           background-repeat:no-repeat;
+           background-position:center;
+           background-size:cover;
+           position:absolute;
+           width:100%;
+           height:700px;
+           top:0;
+           left:0;
+           z-index:-1;
+       }
+       #img1{
+           height:70px;
+           margin-top:5px;
+           margin-left:180px;
+           color:grey;
+       }
+       #img2{
+           height:60px;
+           margin-left:200px;
+       }
+       #img3{
+           height:60px;
+           margin-left:200px;
+       }
+       #img4{
+           height:60px;
+           margin-left:180px;
+       }
+       p{
+           color:grey;
+       }
+   </style>
+<body>
+  <header>
+    <div class="container1">
+      <h1 id="h1">Reliable Efficient delievery</h1>
+      <h1 id="h2">Powered By Technology</h1>
+      <p id="p1">Our Artificial Intelligence Powerful Tools uses millions of project data</p>
+      <p id="p2">points to ensure that your project is successful</p>
+    </div>
+    <div class="container">
+     
+     <div class="box"></div>
+     <div class="box" id="box7">
+        <h2>Supervisor</h2>
+        <p>A supervisor is responsible for the productivity and actions of a small group of employees.</p>
+        <img id="img2" src="https://thumbs.dreamstime.com/z/magnifying-glass-vector-icon-magnifier-illustration-symbol-search-logo-sign-web-sites-mobile-device-magnifying-glass-157727683.jpg">
+     </div>
+     <div class="box" id="box8">
+          <h2>Karma</h2>
+          <p>Karma (car-ma) is a word meaning the result of a person's actions as well as the actions themselves.</p>
+          <img id="img3" src="https://www.stockvault.net/data/2019/07/16/266843/preview16.jpg">;
+     </div>
+     <div class="box" id="box9">
+         <h2>Team Builder</h2>
+         <p>The purpose of team building activities is to motivate your people to work together.</p>
+         <img  id="img1" src="https://st2.depositphotos.com/1010751/6391/v/950/depositphotos_63913959-stock-illustration-wave-in-house-logo.jpg">
+     </div>
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box" id="box12">
+         <h2>Calculator</h2>
+         <p>An electronic or mechanical device for the performance of mathematical computations.</p>
+         <img id="img4" src="https://media.wired.com/photos/5c83066025da7204699767c7/125:94/w_2125,h_1598,c_limit/calculator-1470.jpg">;
+     </div>
+    </div> 
+   </header>
+</body>
+</html>   
