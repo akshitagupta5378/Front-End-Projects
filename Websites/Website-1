@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta charset="UTF-8">
+     <title>box shadow and text shadow</title>
+</head>
+   <style>
+       .class1{
+           display:flex;
+           margin-left:680px;
+           margin-top:-90px;
+       }
+       ul li{
+           
+           list-style:none;
+       }
+       ul li a{
+           padding:20px;
+           color:white;
+           text-decoration:none;
+       }
+       section{
+           display:flex;
+           flex-direction:column;
+           align-items:center;
+           color:white;
+           margin-top:200px;
+           
+           
+       }
+       h1{
+           font-size:50px;
+       }
+       
+       header::before{
+           background-image:url(https://i.pinimg.com/originals/1c/ae/fe/1caefeef2dec9582740fb2060936ddfb.jpg);
+           content: "";
+           background-repeat:no-repeat;
+           background-position:center;
+           background-size:cover;
+           position:absolute;
+           width:100%;
+           height:100%;
+           top:0;
+           left:0;
+           z-index:-1;
+       }
+       .class3{
+             
+             color:white;
+             width:150px;
+             font-size:40px;
+             margin-left:40px;
+       }     
+       #id1{
+           margin-bottom:1px;
+       }
+       #id2{
+           margin-top:-1px;
+       }
+       #id3{
+           margin-bottom:1px;
+       }
+       input[type="submit"]{
+           padding:8px;
+           padding-right:10px;
+           width:180px;
+           border-radius:20px;
+           background:none;
+           color:white;
+           border-color:rgb(15, 206, 219);
+           margin-top:4px;
+           animation-name:akshita;
+           animation-duration:3s;
+           
+           
+       }
+       
+        @keyframes akshita{
+               from{
+                   width:0px;
+               }
+               to{
+                   width:180px;
+               }
+        
+       }
+
+       #id4{
+           display:flex;
+        
+       }
+       #id5{
+           margin-right:10px;
+           
+       }
+       #id6{
+           margin-left:10px;
+          
+       }
+       input[type="submit"]:hover{
+           background-color:rgb(15, 206, 219);
+          
+       }
+       ul li a:hover{
+           border-bottom:2px solid rgb(15, 206, 219);
+       }
+     
+      
+   </style>
+<body>
+    <header>
+     <div class="container">
+        <p class="class3">!Nt9rior</p>
+        <ul class="class1">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BEDROOM</a></li>
+            <li><a href="#">KITCHEN</a></li>
+            <li><a href="#">DINING</a></li>
+            <li><a href="#">BACKYARD</a></li>
+       
+        </ul>
+     </div>
+    </header>
+    <section>
+        <h1 id="id3">DESIGN YOUR HOUSE</h1>
+        <P class="class2" id="id1">Subscribe Easy Tutorials Youtube Channel to watch more videos,</P>
+        <p class="class2" id="id2">press the bell icon to get latest updates.</P>
+        <p id="id4">
+         <input  id="id5" type="submit" value="WATCH MORE">
+         <input id="id6" type="submit" value="SUBSCRIBE">
+        </p>
+        </section>
+</body>
+</html>
+   
